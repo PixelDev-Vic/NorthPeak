@@ -1,0 +1,68 @@
+/* ============================================
+   NorthPeak ERP — Custom Stylesheet
+   ============================================
+   Color tokens, typography, and visual accents.
+   Layout handled entirely by Bootstrap grid
+   classes in index.html.
+   ============================================ */
+
+/* ---------- Color Tokens ---------- */
+:root {
+  --ink:    #0f1e2e;   /* near-black navy — primary text, header/footer bg */
+  --ocean:  #1a3f5c;   /* deep blue — accents                              */
+  --steel:  #5a7ea0;   /* muted blue-grey — labels, secondary text          */
+  --slate:  #3e556e;   /* readable body text on white                       */
+  --frost:  #f0f4f8;   /* barely-blue tint — section backgrounds            */
+  --mist:   #b0c4d8;   /* soft blue — light text on dark backgrounds        */
+  --white:  #ffffff;
+}
+
+/* ---------- Base ---------- */
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---------- Background Colors ---------- */
+.bg-ink   { background-color: var(--ink);   }
+.bg-frost { background-color: var(--frost); }
+
+/* ---------- Text Colors ---------- */
+.text-ink   { color: var(--ink)   !important; }
+.text-ocean { color: var(--ocean) !important; }
+.text-steel { color: var(--steel) !important; }
+.text-slate { color: var(--slate) !important; }
+.text-mist  { color: var(--mist)  !important; }
+
+/* ---------- Utility: Letter Spacing ---------- */
+.ls-wide { letter-spacing: 0.08em; }
+
+/* ---------- Section Divider ---------- */
+.section-rule {
+  border: none;
+  border-top: 1px solid var(--frost);
+  opacity: 1;
+  margin: 0;
+}
+
+/* ---------- Module Tiles ---------- */
+.module-tile {
+  border-top: 2px solid var(--ocean);
+  background-color: var(--frost);
+  height: 100%;
+}
+
+.module-number {
+  color: var(--steel);
+  opacity: 0.4;
+  line-height: 1;
+}
+
+/* ---------- Benefit Items ---------- */
+.benefit-item {
+  border-left: 3px solid var(--ocean);
+  background-color: var(--white);
+  height: 100%;
+}
